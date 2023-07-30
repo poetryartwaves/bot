@@ -1,0 +1,2080 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Good day
+    - Hello, I'm interested in your services
+    - Hi, I was hoping to get some information
+    - Hello there, I have a few questions
+    - Good morning, could you assist me?
+    - Good evening, I need some help
+    - Hi, could you provide some assistance?
+    - Hello, I was looking at your services
+    - Hi there, I need some information about your services
+    - Hello, I was hoping you could help me
+    - Good day, I have some questions about your cleaning services
+    - Hi, I'm interested in learning more about your services
+
+- intent: greet
+  examples: |
+    - "Hello there!"
+    - "Good day to you."
+    - "Hi, how can I assist you today?"
+    - "Hey! Need any help?"
+
+
+- intent: goodbye
+  examples: |
+    - Thank you for your help, goodbye
+    - I appreciate your assistance, goodbye
+    - Thanks for the information, bye
+    - Great, that's all I need for now, goodbye
+    - Thanks for your time, see you later
+    - That's helpful, bye for now
+    - I got what I needed, thank you and goodbye
+    - Thanks for the assistance, have a good day
+    - I appreciate your help, see you next time
+    - Thanks for the information, I'll be in touch
+    - Great, I'll contact you if I have more questions, goodbye
+    - Thanks for your help, I'll reach out if I need more information
+
+- intent: goodbye
+  examples: |
+    - "See you later!"
+    - "Goodbye, have a nice day."
+    - "Bye, take care!"
+    - "Farewell, hope to see you again soon."
+
+
+- intent: affirm
+  examples: |
+    - Yes, that's correct
+    - Yes, that's what I'm looking for
+    - Yes, that answers my question
+    - Yes, I would like to proceed
+    - Yes, that sounds good
+    - Yes, that's exactly it
+    - Yes, that's right
+    - Yes, I agree
+    - Yes, that's exactly what I was asking
+    - Yes, that's the information I needed
+    - Yes, that's the service I'm interested in
+    - Yes, I'm satisfied with that answer
+
+- intent: affirm
+  examples: |
+    - "Absolutely!"
+    - "Definitely."
+    - "Sure thing!"
+    - "Yes, that's correct."
+    - "You're right!"
+    - "That's exactly what I mean."
+    - "You got it."
+
+- intent: deny
+  examples: |
+    - "No, that's not right."
+    - "I don't think so."
+    - "That's not what I meant."
+    - "No, I disagree."
+    - "That's not correct."
+    - "I'm afraid that's not right."
+
+- intent: inquire_services
+  examples: |
+    - "Can you tell me more about your services?"
+    - "What kind of cleaning services do you offer?"
+    - "I'm interested in your cleaning services. Can you tell me more?"
+    - "What services do you provide?"
+    - "I'd like to know more about your cleaning services."
+    - "Could you provide more information about your services?"
+
+- intent: deny
+  examples: |
+    - No, that's not what I meant
+    - No, that's not right
+    - No, I was asking about something else
+    - No, that doesn't answer my question
+    - No, I need different information
+    - No, that's not the service I need
+    - No, I was referring to something else
+    - No, that's not the information I was looking for
+    - No, I was asking about a different service
+    - No, that doesn't match what I was asking
+    - No, I need information about a different aspect of your services
+    - No, that's not the answer I was hoping for
+
+- intent: inquire_services
+  examples: |
+    - Could you provide a detailed list of your services?
+    - I'm interested in your cleaning services, could you tell me more?
+    - What specific cleaning services do you offer?
+    - I'm considering your cleaning services, could you provide more information?
+    - Could you explain the different cleaning services you provide?
+    - I'd like to understand more about your cleaning services.
+    - What are the various cleaning services that you offer?
+    - Can you provide more details about your cleaning services?
+    - I'm interested in understanding more about your services.
+    - Can you explain the range of cleaning services you offer?
+
+- intent: inquire_pricing
+  examples: |
+    - Could you provide a breakdown of your pricing?
+    - I'm interested in your services, could you tell me about your pricing structure?
+    - What are the costs associated with your cleaning services?
+    - I'd like to understand your pricing, could you provide more details?
+    - Could you explain how your pricing works?
+    - I'm considering your services, could you provide information on your pricing?
+    - Can you provide more details about your pricing structure?
+    - I'm interested in understanding more about your pricing.
+    - Can you explain the pricing for your cleaning services?
+
+- intent: inquire_eco_friendly
+  examples: |
+    - Could you tell me more about your eco-friendly cleaning practices?
+    - I'm interested in eco-friendly cleaning, do you offer this?
+    - How do you incorporate eco-friendly practices in your cleaning services?
+    - I'd like to understand more about your eco-friendly cleaning methods.
+    - Could you explain how your cleaning methods are environmentally friendly?
+    - I'm considering your services, could you provide information on your eco-friendly practices?
+    - Can you provide more details about your eco-friendly cleaning methods?
+    - I'm interested in understanding more about your eco-friendly cleaning.
+    - Can you explain how you ensure your cleaning services are eco-friendly?
+
+- intent: inquire_satisfaction_guarantee
+  examples: |
+    - Could you provide more details about your satisfaction guarantee?
+    - I'm interested in your services, could you tell me about your satisfaction guarantee?
+    - How do you ensure customer satisfaction with your cleaning services?
+    - I'd like to understand more about your satisfaction guarantee.
+    - Could you explain your policy if a customer is not satisfied with the cleaning?
+    - I'm considering your services, could you provide information on your satisfaction guarantee?
+    - Can you provide more details about your satisfaction guarantee policy?
+    - I'm interested in understanding more about your satisfaction guarantee.
+    - Can you explain how you ensure customer satisfaction with your cleaning services?
+
+- intent: inquire_about_us
+  examples: |
+    - Could you tell me more about the history of VanShine?
+    - I'm interested in your company, could you provide more details?
+    - What's the story behind VanShine?
+    - I'd like to understand more about your company's background.
+    - Could you explain more about the team at VanShine?
+    - I'm considering your services, could you provide information about your company?
+    - Can you provide more details about the team behind VanShine?
+    - I'm interested in understanding more about your company.
+    - Can you explain more about the people behind VanShine?
+
+- intent: inquire_vision
+  examples: |
+    - Could you share more about VanShine's vision?
+    - I'm interested in your company's vision, could you provide more details?
+    - What's the vision that guides VanShine?
+    - I'd like to understand more about your company's vision.
+    - Could you explain more about the vision of VanShine?
+    - I'm considering your services, could you provide information about your vision?
+    - Can you provide more details about VanShine's vision?
+    - I'm interested in understanding more about your company's vision.
+    - Can you explain more about the guiding vision of VanShine?
+
+- intent: inquire_values
+  examples: |
+    - Could you share more about VanShine's values?
+    - I'm interested in your company's values, could you provide more details?
+    - What are the values that guide VanShine?
+    - I'd like to understand more about your company's values.
+    - Could you explain more about the values of VanShine?
+    - I'm considering your services, could you provide information about your values?
+    - Can you provide more details about VanShine's values?
+    - I'm interested in understanding more about your company's values.
+    - Can you explain more about the guiding values of VanShine?
+
+- intent: schedule_service
+  examples: |
+    - I'd like to schedule a cleaning service, how can I do that?
+    - Can you guide me on how to book a cleaning service?
+    - I'm interested in your cleaning services, how can I schedule one?
+    - I'd like to book a cleaning service, could you assist me?
+    - Could you help me schedule a cleaning service?
+    - I'm considering your services, could you guide me on how to schedule a cleaning?
+    - Can you provide more details on how to schedule a cleaning service?
+    - I'm interested in scheduling a cleaning service, could you assist me?
+    - Can you explain how I can schedule a cleaning service?
+
+- intent: inquire_availability
+  examples: |
+    - I live in Burnaby, can I avail your services here?
+    - I'm based in Richmond, do you offer your cleaning services here?
+    - I'm from Surrey, are your services available in my area?
+    - I reside in Vancouver, can I book your services?
+    - I'm located in Burnaby, do you provide your services here?
+    - I'm in Richmond, are your cleaning services available here?
+    - I'm from Surrey, can I avail your services?
+    - I'm staying in Vancouver, are your services available here?
+    - Are your services available on weekends?
+    - Can I book a cleaning service for next week?
+    - Do you have any available slots for this Friday?
+    - What's your availability like for the coming week?
+    - Can I schedule a cleaning service for tomorrow?
+    - Are you available for a cleaning service next month?
+    - Do you have any openings for a cleaning service this week?
+    - Can I book a cleaning service for the weekend?
+
+
+- intent: inquire_duration
+  examples: |
+    - How long does a typical cleaning session last?
+    - What's the usual duration for a cleaning service?
+    - Can you give me an idea of how long a cleaning session takes?
+    - I'd like to know how much time a cleaning session usually takes.
+    - Could you tell me about the duration of a typical cleaning session?
+    - I'm interested in knowing how long a cleaning service lasts.
+    - Can you provide some information on how long a cleaning session usually takes?
+    - I'd like to understand the typical duration of a cleaning service.
+
+- intent: request_cleaning_tips
+  examples: |
+    - Do you have any tips for maintaining cleanliness at home?
+    - Can you share some advice on how to keep my kitchen clean?
+    - I'd appreciate some tips on maintaining a clean living space.
+    - Could you share some cleaning tips for my office?
+    - I'm interested in some advice on eco-friendly cleaning methods.
+    - Can you provide some tips on how to keep my home clean?
+    - I'd like to know some tips on maintaining cleanliness in my office.
+    - Can you share some eco-friendly cleaning tips?
+
+- intent: inquire_unsatisfied
+  examples: |
+    - What if I'm not satisfied with the cleaning service?
+    - What's your policy if a customer is not happy with the cleaning?
+    - What steps do you take if a customer is not satisfied with your service?
+    - I'd like to know your policy if the cleaning service is not up to the mark.
+    - Could you tell me what happens if I'm not satisfied with the cleaning?
+    - I'm interested in knowing your policy for unsatisfactory service.
+    - Can you provide some information on what happens if the cleaning service is not satisfactory?
+    - I'd like to understand your policy if a customer is not happy with your service.
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - Is it necessary for me to be present during the cleaning process?
+    - Do I need to be at home when you're performing the cleaning service?
+    - Should I be there while you're cleaning my space?
+    - Is it required for me to be present during the cleaning service?
+    - Do I have to be home when the cleaning is being done?
+    - Is my presence required during the cleaning process?
+    - Should I stay at home during the cleaning service?
+    - Is it mandatory for me to be there while you clean?
+
+- intent: inquire_quality_assurance
+  examples: |
+    - How do you ensure the quality of your cleaning services?
+    - What measures do you take to guarantee the quality of your cleaning?
+    - Can you tell me about your quality assurance process?
+    - I'm interested in knowing how you ensure the quality of your cleaning.
+    - Could you explain your quality assurance process for cleaning services?
+    - I'd like to know more about your quality assurance measures.
+    - How do you maintain the quality of your cleaning services?
+    - Can you provide some information on your quality assurance process?
+    - How do you ensure the quality of your services?
+    - What steps do you take to ensure high-quality cleaning?
+    - Can you tell me about your quality control measures?
+    - How do you maintain the quality of your cleaning services?
+    - What quality assurance processes do you have in place?
+    - How do you guarantee the quality of your cleaning?
+    - What measures do you take to ensure the quality of your services?
+    - Can you explain your quality assurance procedures?
+    - How do you make sure the cleaning is done well?
+    - What do you do to ensure high-quality cleaning?
+
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - Do you bring your own cleaning supplies and equipment?
+    - Will you provide the cleaning supplies?
+    - Do I need to provide any cleaning equipment or supplies?
+    - Are cleaning supplies included in your service?
+    - I'd like to know if you provide the cleaning supplies.
+    - Can you tell me if you bring your own cleaning equipment?
+    - I'm interested in knowing if you provide the cleaning supplies.
+    - Do you include cleaning supplies in your service?
+    - Do you bring your own cleaning products?
+    - Are cleaning supplies included in the service?
+    - Do I need to provide my own cleaning supplies?
+    - Will I need to supply any cleaning products?
+    - Do you use your own cleaning equipment?
+    - Will you need me to provide any cleaning tools?
+    - Do you bring your own mop and vacuum?
+    - Are cleaning tools included in the service?
+    - Do I need to provide my own mop and vacuum?
+    - Will I need to supply any cleaning tools?
+    - Do you bring your own cleaning supplies?
+    - Are cleaning supplies included in your services?
+    - Will I need to provide any cleaning supplies?
+    - Do you use your own cleaning equipment?
+    - What kind of cleaning supplies do you use?
+    - Do I need to provide the cleaning tools?
+    - Are the cleaning supplies your own or do I need to provide them?
+    - Do you use eco-friendly cleaning supplies?
+    - Will you bring cleaning supplies and equipment?
+    - Do I need to provide any cleaning equipment?
+
+
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - Can I schedule your cleaning services on a regular basis?
+    - Do you offer weekly or monthly cleaning services?
+    - I'm interested in booking your services regularly, is that possible?
+    - Can I arrange for regular cleaning services with your company?
+    - I'd like to know if I can schedule regular cleaning services.
+    - Can you provide cleaning services on a regular basis?
+    - Do you offer the option for regular cleaning services?
+    - I'm interested in scheduling regular cleaning services, is that possible?
+    - Can I book a weekly cleaning service?
+    - Do you offer monthly cleaning packages?
+    - I'm interested in a bi-weekly cleaning service. Can you do that?
+    - Can I schedule a regular cleaning every two weeks?
+    - Do you provide regular cleaning services for offices?
+    - Can I arrange for a regular cleaning service for my home?
+    - I'd like to have my office cleaned on a weekly basis. Is that possible?
+    - Do you have any packages for regular cleaning services?
+    - Can I set up a recurring cleaning schedule?
+    - I want my house cleaned every month. Can you accommodate that?
+    - Can I schedule a regular cleaning service?
+    - Do you offer weekly cleaning services?
+    - Can I book a cleaning service every month?
+    - I want a regular cleaning service, how can I schedule that?
+    - Do you provide regular cleaning services for offices?
+    - Can I get a bi-weekly cleaning service?
+    - I need a cleaning service every week, can you do that?
+    - Do you have any packages for regular cleaning services?
+    - I'm interested in a monthly cleaning service.
+    - Can I arrange for a regular cleaning schedule?
+
+
+
+- intent: inquire_insurance
+  examples: |
+    - Are your services insured and bonded?
+    - Can you tell me about your insurance and bonding?
+    - Is your cleaning service insured?
+    - Do you have insurance and bonding for your cleaning services?
+    - I'd like to know if your services are insured.
+    - Can you provide information about your insurance coverage?
+    - I'm interested in knowing if your services are bonded.
+    - Could you provide details about your insurance and bonding?
+    - Are your services insured?
+    - Do you have insurance for your cleaning services?
+    - Is your company bonded?
+    - Can you provide proof of insurance?
+    - I want to know if your company is insured and bonded.
+    - Do you have liability insurance?
+    - What kind of insurance do you have for your cleaning services?
+    - Is your cleaning staff insured?
+    - Can you tell me more about your insurance coverage?
+    - What happens if something gets damaged during the cleaning? Are you insured for that?
+    - Are your services insured?
+    - Do you have insurance for your cleaning services?
+    - Can you tell me about your insurance policy?
+    - Is your company bonded and insured?
+    - I want to know about your insurance coverage.
+    - What kind of insurance do you have for your services?
+    - Do you carry insurance for your cleaning staff?
+    - Is your cleaning service bonded?
+    - Can you provide proof of insurance?
+    - What happens if something gets damaged during the cleaning?
+
+
+
+
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - What is included in a standard cleaning?
+    - Can you tell me about your standard cleaning service?
+    - What does a standard cleaning service involve?
+    - I want to know what's included in your standard cleaning.
+    - Could you explain what your standard cleaning service includes?
+    - I'm interested in knowing what's covered in a standard cleaning.
+    - Can you provide details about your standard cleaning service?
+    - I'd like to know what tasks are performed in a standard cleaning.
+    - What does your standard cleaning service include?
+    - Can you tell me more about what's covered in a standard cleaning?
+    - What tasks are performed during a standard cleaning?
+    - I want to know what's included in your standard cleaning service.
+    - What can I expect from a standard cleaning?
+    - What's the difference between a standard cleaning and a deep cleaning?
+    - Does your standard cleaning service include windows?
+    - Is carpet cleaning included in your standard cleaning service?
+    - What areas of the house do you cover in a standard cleaning?
+    - How thorough is your standard cleaning service?
+    - What does your standard cleaning service include?
+    - Can you tell me more about what's covered in a standard cleaning?
+    - What tasks are performed during a standard cleaning?
+    - I want to know what's included in a standard cleaning.
+    - What can I expect from a standard cleaning service?
+    - Does your standard cleaning include windows?
+    - What areas do you clean in a standard cleaning?
+    - Do you clean the kitchen and bathroom in a standard cleaning?
+    - What's the difference between a standard cleaning and a deep cleaning?
+    - How thorough is your standard cleaning?
+
+
+
+- intent: inquire_special_requests
+  examples: |
+    - Can I request special tasks or extras?
+    - Do you accommodate special cleaning requests?
+    - Can I ask for additional cleaning tasks?
+    - I have some special cleaning tasks in mind, can you accommodate them?
+    - Can I make special requests for my cleaning service?
+    - I'd like to know if you can handle special cleaning tasks.
+    - Can you cater to specific cleaning requests?
+    - I have some additional tasks, can you accommodate them in the cleaning service?
+    - Can I ask for additional tasks during a cleaning service?
+    - I have some specific cleaning tasks, can you accommodate them?
+    - Can I request for certain areas to be cleaned more thoroughly?
+    - I have some special requests for my cleaning service, can you handle them?
+    - Are you able to accommodate special cleaning requests?
+    - Can I ask for extra services like carpet cleaning or window washing?
+    - I need some additional tasks done, can you do them?
+    - Can I customize the cleaning service according to my needs?
+    - I have some specific areas that need extra attention, can you accommodate that?
+    - Can I add on services to a standard cleaning?
+    - Can I ask for additional tasks during a cleaning service?
+    - I have some specific cleaning tasks, can you do them?
+    - Can I request for certain areas to be cleaned more thoroughly?
+    - I need some extra tasks done, can you accommodate that?
+    - Can I make special requests for my cleaning service?
+    - Are you able to handle special cleaning requests?
+    - I have some special cleaning needs, can you meet them?
+    - Can I request for you to focus on certain areas?
+    - I want some specific areas to be cleaned, can you do that?
+    - Can I make special requests for my cleaning service?
+    - Can I ask for additional tasks during a cleaning service?
+    - Are you able to accommodate special cleaning requests?
+    - If I have specific cleaning tasks in mind, can you handle them?
+    - Can I request for certain areas to be cleaned more thoroughly?
+    - Do you take special requests for cleaning?
+    - Can I add extra services to my cleaning appointment?
+    - Can you handle special cleaning tasks if I request them?
+    - I have some specific cleaning needs, can you accommodate them?
+
+
+
+
+- intent: inquire_tipping
+  examples: |
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I tip the cleaners after the service?
+    - Do your cleaners accept tips?
+    - I'd like to know if tipping is expected.
+    - Is it standard to tip the cleaning staff?
+    - Can you provide information about tipping etiquette?
+    - Should I provide a tip for the cleaning service?
+    - Is tipping your cleaning staff mandatory?
+    - Should I tip the cleaners after the service?
+    - What's the usual tipping rate for your cleaning staff?
+    - Is it customary to tip your cleaning staff?
+    - Do your cleaners accept tips?
+    - Should I include a tip in my payment?
+    - How much should I tip the cleaners?
+    - Is it expected to tip the cleaning team?
+    - What's the standard tipping practice for cleaning services?
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I give a tip to the cleaners?
+    - Do your cleaners accept gratuity?
+    - Is tipping included in the cleaning service fee?
+    - Can I give a tip to the cleaning staff?
+    - Is it okay to tip the cleaning team?
+    - Do I need to provide a tip for the cleaning service?
+    - What's your policy on tipping?
+    - Is it expected to tip the cleaners?
+    - Can I give a gratuity to the cleaners?
+
+
+
+- intent: inquire_cleaning_duration
+  examples: |
+    - How long does a cleaning session take?
+    - What's the duration of your cleaning service?
+    - How much time do you need to clean a house?
+    - How long will you take to clean my office?
+    - Can you give me an estimate of the cleaning duration?
+    - I'd like to know how much time the cleaning process will take.
+    - What is the typical duration for a cleaning session?
+    - How long should I expect the cleaning service to last?
+    - How much time will you need to clean my apartment?
+    - What's the usual duration for a cleaning service?
+    - How long does it take to clean a three-bedroom house?
+    - Can you give me an estimate of how long the cleaning will take?
+    - How long should I expect the cleaning service to last?
+    - What's the average duration of a cleaning session?
+    - How long will the cleaners be in my home?
+    - How much time should I set aside for a cleaning appointment?
+
+
+- intent: request_cleaning_tips
+  examples: |
+    - Do you have any cleaning tips?
+    - Can you give me some advice on maintaining cleanliness?
+    - I'd like some tips on cleaning my kitchen.
+    - Can you suggest some eco-friendly cleaning methods?
+    - I'm looking for some cleaning advice, can you help?
+    - Can you share some cleaning tips for the bathroom?
+    - I'd appreciate some tips on maintaining a clean living room.
+    - What are some effective cleaning techniques I can use?
+
+- intent: inquire_unsatisfied
+  examples: |
+    - What if I'm not satisfied with the cleaning?
+    - What happens if I'm not happy with the cleaning service?
+    - What is your policy if the cleaning is not satisfactory?
+    - What do I do if I'm not satisfied with your cleaning service?
+    - What are my options if I'm not happy with the cleaning results?
+    - How do you handle situations where the client is not satisfied?
+    - What steps do you take if a client is not satisfied with the service?
+    - I'd like to know about your policies for unsatisfactory service.
+    - What if I'm not happy with the cleaning?
+    - What's your policy if I'm not satisfied with the cleaning?
+    - What happens if I'm not satisfied with your service?
+    - If I'm not happy with the cleaning, what can I do?
+    - What's your procedure for unsatisfied customers?
+    - What if I'm not satisfied with the cleaning result?
+    - What can I do if the cleaning is not up to my expectations?
+    - What's your policy for unsatisfactory service?
+    - If I'm not satisfied with the cleaning, can I get a refund?
+    - What are my options if I'm not happy with your cleaning service?
+
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - Do I need to be home during the cleaning?
+    - Should I be present when you're cleaning?
+    - Do I need to be there while you clean?
+    - Is it necessary for me to be home during the cleaning service?
+    - What's your policy on the client's presence during cleaning?
+    - Is it required for me to be present during the cleaning process?
+    - Can you clean my home if I'm not there?
+    - Do you require the client to be present while cleaning?
+    - Do I have to be home when you clean?
+    - Is it necessary for me to be there during the cleaning?
+    - Should I be at home while you're cleaning?
+    - Do I need to be present when you clean my house?
+    - Is it required for me to be there when you're cleaning?
+    - Do I have to stay at home during the cleaning service?
+    - Can you clean my house if I'm not at home?
+    - Can you do the cleaning even if I'm not there?
+    - Is it okay if I'm not home during the cleaning?
+    - Can you clean while I'm not at home?
+
+
+- intent: inquire_quality_assurance
+  examples: |
+    - How do you ensure the quality of your cleaning?
+    - What measures do you take to ensure cleaning quality?
+    - How do you guarantee the quality of your cleaning services?
+    - Can you tell me about your quality assurance process?
+    - What steps do you take to maintain high-quality service?
+    - I'm interested in knowing how you assure quality in your services.
+    - Can you explain your quality control process?
+    - How do you ensure consistent quality in your cleaning services?
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - Do you provide cleaning supplies and equipment?
+    - Will you bring your own cleaning supplies?
+    - Do I need to provide the cleaning equipment?
+    - Are cleaning supplies included in your service?
+    - What kind of cleaning supplies do you use?
+    - Do you use eco-friendly cleaning supplies?
+    - Will I need to provide any cleaning supplies or equipment?
+    - Can you tell me more about the cleaning supplies you use?
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - Can I schedule regular cleaning services?
+    - Do you offer weekly or monthly cleaning services?
+    - Can I book your services on a regular basis?
+    - I'm interested in scheduling regular cleaning services.
+    - Can I set up a regular cleaning schedule with you?
+    - Do you provide options for regular cleaning appointments?
+    - I'd like to have my house cleaned on a regular basis, can you do that?
+    - How can I arrange for regular cleaning services?
+
+- intent: inquire_insurance
+  examples: |
+    - Are you insured and bonded?
+    - Can you tell me about your insurance and bonding?
+    - Is your cleaning service insured?
+    - Do you have insurance and bonding for your cleaning services?
+    - I'd like to know more about your insurance coverage.
+    - Can you provide proof of insurance?
+    - What kind of insurance do you carry for your cleaning services?
+    - Is your company bonded and insured?
+    - Do you have insurance for your cleaning services?
+    - Can you tell me about your insurance policy?
+    - Is your cleaning service insured and bonded?
+    - Are your cleaning staff insured?
+    - What kind of insurance do you have for your services?
+    - Are you fully insured for any damages?
+    - Do you have liability insurance for your cleaning services?
+    - Can you provide proof of insurance?
+    - What does your insurance cover?
+    - Is your company bonded and insured?
+
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - What is included in a standard cleaning?
+    - Can you tell me about your standard cleaning service?
+    - What does a standard cleaning service involve?
+    - I want to know what's included in your standard cleaning.
+    - What tasks are performed during a standard cleaning?
+    - Can you break down what a standard cleaning includes?
+    - I'd like to understand what your standard cleaning service covers.
+    - What can I expect from a standard cleaning service?
+    - What does your standard cleaning service include?
+    - Can you tell me more about your standard cleaning?
+    - What tasks are included in a standard cleaning?
+    - What's covered in your standard cleaning service?
+    - I want to know what's included in a standard cleaning.
+    - What can I expect from a standard cleaning?
+    - What does a standard cleaning involve?
+    - What's the difference between a standard cleaning and a deep cleaning?
+    - What areas do you clean in a standard cleaning?
+    - Can you give me a breakdown of your standard cleaning service?
+
+
+- intent: inquire_special_requests
+  examples: |
+    - Can I request special tasks or extras?
+    - Do you accommodate special cleaning requests?
+    - Can I ask for additional cleaning tasks?
+    - I have some special cleaning tasks in mind, can you accommodate them?
+    - Can I add specific tasks to the cleaning service?
+    - I have a few special requests for my cleaning service, can you handle them?
+    - Are you able to handle special cleaning requests?
+    - I need some specific tasks done during the cleaning, can you do that?
+
+- intent: inquire_tipping
+  examples: |
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I tip the cleaners after the service?
+    - Do your cleaners accept tips?
+    - What's the tipping policy for your cleaning staff?
+    - Is tipping included in the cleaning service fee?
+    - Can I add a tip to my payment for the cleaning service?
+    - What's the usual tipping practice for your cleaning services?
+    - Is it expected to tip the cleaning staff?
+    - Should I give a tip to the cleaners?
+    - What's the usual tipping practice for cleaning services?
+    - Is tipping included in the cleaning fee?
+    - Do your cleaners accept tips?
+    - Is it customary to give a gratuity to the cleaning team?
+    - Should I prepare a tip for the cleaning service?
+    - What's the tipping policy for your cleaning staff?
+
+
+- intent: request_cleaning_tips
+  examples: |
+    - Do you have any cleaning tips?
+    - Can you give me some advice on maintaining cleanliness?
+    - I'd like some tips on cleaning my kitchen.
+    - Can you suggest some eco-friendly cleaning methods?
+    - What are some cleaning tips you can share?
+    - I'm looking for some professional cleaning advice, can you help?
+    - Can you share some cleaning hacks or tips?
+    - I'd appreciate any cleaning tips you can provide.
+
+- intent: inquire_availability
+  examples: |
+    - Do you offer services in Burnaby?
+    - Are your cleaning services available in my area?
+    - Can I get your services in Richmond?
+    - I live in Surrey, can I book your services?
+    - Do you provide cleaning services in my location?
+    - Is your service available in my city?
+    - Can I avail of your cleaning services in my area?
+    - Are your services available in my locality?
+
+- intent: inquire_duration
+  examples: |
+    - How long does a cleaning session take?
+    - What's the duration of your cleaning service?
+    - How much time do you need to clean a house?
+    - How long will you take to clean my office?
+    - What is the estimated time for a cleaning session?
+    - Can you tell me how long a cleaning service usually takes?
+    - How much time should I allot for a cleaning session?
+    - What's the usual duration for your cleaning services?
+
+- intent: inquire_areas_served
+  examples: |
+    - What areas do you serve?
+    - Can you tell me the locations you provide services in?
+    - Do you provide services in my area?
+    - What are the areas you cover for your cleaning services?
+    - I live in this area, do you serve here?
+    - What locations do your cleaning services cover?
+    - Can you list the areas where your services are available?
+    - Are your cleaning services available in my locality?
+    - Do you offer services in the downtown area?
+    - Can I book your cleaning services if I live in the suburbs?
+    - Are your services available in the West End?
+    - Do you serve customers in the East Side?
+    - Can I get your services in the city center?
+    - I live in the outskirts, can I book your services?
+    - Do you provide cleaning services in my neighborhood?
+    - Are your cleaning services available citywide?
+
+
+- intent: inquire_scheduling
+  examples: |
+    - How can I schedule a cleaning service?
+    - What's the process to book a cleaning service?
+    - Can you guide me on how to schedule a cleaning session?
+    - I want to book a cleaning service, how do I do that?
+    - What are the steps to schedule a cleaning service?
+    - How can I arrange for a cleaning session?
+    - Can you tell me how to book a cleaning service?
+    - I'd like to schedule a cleaning, how should I proceed?
+    - How can I schedule a cleaning service?
+    - What's the process for booking a cleaning service?
+    - Can I schedule a cleaning service online?
+    - How far in advance do I need to book a cleaning service?
+    - Can I book a cleaning service over the phone?
+    - What's the easiest way to schedule a cleaning service?
+    - Can I schedule a cleaning service through your website?
+    - How do I go about booking a cleaning service?
+
+
+- intent: inquire_unsatisfied
+  examples: |
+    - What if I'm not satisfied with the cleaning?
+    - What happens if I'm not happy with the cleaning service?
+    - What is your policy if the cleaning is not satisfactory?
+    - What do I do if I'm not satisfied with your cleaning service?
+    - What are my options if I'm not happy with the cleaning?
+    - What steps do you take if a customer is not satisfied?
+    - How do you handle situations where the client is not satisfied?
+    - What if the cleaning doesn't meet my expectations?
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - Do I need to be home during the cleaning?
+    - Should I be present when you're cleaning?
+    - Do I need to be there while you clean?
+    - Is it necessary for me to be home during the cleaning service?
+    - Do I have to be present for the cleaning?
+    - Is it required for me to be at home while you clean?
+    - Do I need to be at the premises during the cleaning?
+    - Is my presence required during the cleaning process?
+
+- intent: inquire_quality_assurance
+  examples: |
+    - How do you ensure the quality of your cleaning?
+    - What measures do you take to ensure cleaning quality?
+    - How do you guarantee the quality of your cleaning services?
+    - Can you tell me about your quality assurance process?
+    - What steps do you take to maintain the quality of your services?
+    - How do you ensure high standards in your cleaning services?
+    - What is your approach to quality assurance in cleaning?
+    - How do you maintain the quality of your cleaning services?
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - Do you provide cleaning supplies and equipment?
+    - Will you bring your own cleaning supplies?
+    - Do I need to provide the cleaning equipment?
+    - Are cleaning supplies included in your service?
+    - Do you bring your own cleaning materials?
+    - Are the cleaning supplies provided by you?
+    - Do I have to supply the cleaning materials?
+    - Will I need to provide any cleaning supplies?
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - Can I schedule regular cleaning services?
+    - Do you offer weekly or monthly cleaning services?
+    - Can I book your services on a regular basis?
+    - I'm interested in scheduling regular cleaning services.
+    - Do you provide regular cleaning packages?
+    - Can I set up a recurring cleaning schedule?
+    - Do you have options for regular cleaning?
+    - Can I arrange for a regular cleaning service?
+
+- intent: inquire_insurance
+  examples: |
+    - Are you insured and bonded?
+    - Can you tell me about your insurance and bonding?
+    - Is your cleaning service insured?
+    - Do you have insurance and bonding for your cleaning services?
+    - Are your services insured?
+    - Do you carry insurance for your cleaning services?
+    - Is your company insured for any damages during cleaning?
+    - Can you provide information about your insurance coverage?
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - What is included in a standard cleaning?
+    - Can you tell me about your standard cleaning service?
+    - What does a standard cleaning service involve?
+    - I want to know what's included in your standard cleaning.
+    - What tasks are covered in a standard cleaning?
+    - Can you detail what a standard cleaning includes?
+    - What can I expect from a standard cleaning service?
+    - What's included in your basic cleaning package?
+
+- intent: inquire_special_requests
+  examples: |
+    - Can I request special tasks or extras?
+    - Do you accommodate special cleaning requests?
+    - Can I ask for additional cleaning tasks?
+    - I have some special cleaning tasks in mind, can you accommodate them?
+    - Can I add specific tasks to the cleaning service?
+    - Do you handle special cleaning requests?
+    - Can I request additional services or tasks during the cleaning?
+    - Are you able to accommodate specific cleaning requests?
+
+- intent: inquire_tipping
+  examples: |
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I tip the cleaners after the service?
+    - Do your cleaners accept tips?
+    - Is tipping included in the service fee?
+    - Should I leave a tip for the cleaning team?
+    - What's the usual tipping practice for cleaning services?
+    - Is it expected to tip the cleaning staff?
+
+- intent: request_cleaning_tips
+  examples: |
+    - Do you have any cleaning tips?
+    - Can you give me some advice on maintaining cleanliness?
+    - I'd like some tips on cleaning my kitchen.
+    - Can you suggest some eco-friendly cleaning methods?
+    - What are some cleaning tips you can share?
+    - Can you provide some professional cleaning advice?
+    - I'm looking for some cleaning tips, can you help?
+    - What are some cleaning hacks you can recommend?
+
+- intent: inquire_availability
+  examples: |
+    - Do you offer services in Burnaby?
+    - Are your cleaning services available in my area?
+    - Can I get your services in Richmond?
+    - I live in Surrey, can I book your services?
+    - Are your services available in my location?
+    - Can I avail of your cleaning services in my city?
+    - Do you serve in my area?
+    - Is your cleaning service available in my locality?
+
+- intent: inquire_duration
+  examples: |
+    - How long does a cleaning session take?
+    - What's the duration of your cleaning service?
+    - How much time do you need to clean a house?
+    - How long will you take to clean my office?
+    - What is the estimated time for a cleaning session?
+    - Can you give me an idea of how long the cleaning will take?
+    - How much time should I allot for a cleaning session?
+    - What's the usual duration for a cleaning service?
+
+- intent: inquire_areas_served
+  examples: |
+    - Do you offer services in Burnaby?
+    - Are your cleaning services available in my area?
+    - Can I get your services in Richmond?
+    - I live in Surrey, can I book your services?
+    - Do you provide services in my location?
+    - Can I avail of your cleaning services in my city?
+    - Do you serve in my area?
+    - Is your cleaning service available in my locality?
+
+- intent: inquire_scheduling
+  examples: |
+    - How can I schedule a cleaning service?
+    - What's the process to book a cleaning service?
+    - Can you guide me on how to schedule a cleaning?
+    - I'd like to book a cleaning service, how do I do that?
+    - What are the steps to schedule a cleaning service?
+    - How do I go about booking a cleaning service?
+    - Can you help me schedule a cleaning service?
+    - I want to book a cleaning service, what should I do?
+
+- intent: inquire_unsatisfied
+  examples: |
+    - What if I'm not satisfied with the cleaning?
+    - What happens if I'm not happy with the cleaning service?
+    - What is your policy if the cleaning is not satisfactory?
+    - What do I do if I'm not satisfied with your cleaning service?
+    - What's your policy for unsatisfactory cleaning service?
+    - How do you handle situations where the client is not satisfied?
+    - What are my options if I'm not happy with the cleaning?
+    - If I'm not satisfied with the cleaning, what should I do?
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - Do I need to be home during the cleaning?
+    - Should I be present when you're cleaning?
+    - Do I need to be there while you clean?
+    - Is it necessary for me to be home during the cleaning service?
+    - Do I have to be present during the cleaning process?
+    - Is it required for me to be at home while you clean?
+    - Should I stay at home while the cleaning is being done?
+    - Do I need to be on the premises during the cleaning service?
+
+- intent: inquire_quality_assurance
+  examples: |
+    - How do you ensure the quality of your cleaning?
+    - What measures do you take to ensure cleaning quality?
+    - How do you guarantee the quality of your cleaning services?
+    - Can you tell me about your quality assurance process?
+    - What steps do you take to ensure high-quality cleaning?
+    - How do you maintain the quality of your cleaning services?
+    - What's your approach to quality assurance in cleaning?
+    - How do you make sure that the cleaning is done properly?
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - Do you provide cleaning supplies and equipment?
+    - Will you bring your own cleaning supplies?
+    - Do I need to provide the cleaning equipment?
+    - Are cleaning supplies included in your service?
+    - Do you bring your own cleaning materials and equipment?
+    - Are the cleaning supplies provided by you?
+    - Do I have to provide any cleaning supplies or equipment?
+    - Will I need to supply any cleaning materials?
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - Can I schedule regular cleaning services?
+    - Do you offer weekly or monthly cleaning services?
+    - Can I book your services on a regular basis?
+    - I'm interested in scheduling regular cleaning services.
+    - Can I arrange for a regular cleaning schedule?
+    - Do you provide recurring cleaning services?
+    - Can I set up a regular cleaning plan?
+    - Is it possible to have a regular cleaning schedule with your services?
+
+- intent: inquire_insurance
+  examples: |
+    - Are you insured and bonded?
+    - Can you tell me about your insurance and bonding?
+    - Is your cleaning service insured?
+    - Do you have insurance and bonding for your cleaning services?
+    - Are your cleaning services insured and bonded?
+    - Do you carry insurance for your cleaning services?
+    - Can you provide information about your insurance coverage?
+    - Is your company insured in case of any damages?
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - What is included in a standard cleaning?
+    - Can you tell me about your standard cleaning service?
+    - What does a standard cleaning service involve?
+    - I want to know what's included in your standard cleaning.
+    - What tasks are covered under your standard cleaning service?
+    - What can I expect from a standard cleaning?
+    - Could you explain what your standard cleaning includes?
+    - What's part of your standard cleaning package?
+
+- intent: inquire_special_requests
+  examples: |
+    - Can I request special tasks or extras?
+    - Do you accommodate special cleaning requests?
+    - Can I ask for additional cleaning tasks?
+    - I have some special cleaning tasks in mind, can you accommodate them?
+    - Can I make special requests for my cleaning service?
+    - Do you handle special cleaning requests?
+    - Can I add extra tasks to my cleaning service?
+    - Are you able to accommodate specific cleaning requests?
+
+- intent: inquire_cleaning_duration
+  examples: |
+    - How long does a cleaning session take?
+    - What's the duration of your cleaning service?
+    - How much time do you need to clean a house?
+    - How long will you take to clean my office?
+    - What is the typical duration for a cleaning session?
+    - How much time should I allot for a cleaning service?
+    - Can you give me an estimate of how long the cleaning will take?
+    - How long does a standard cleaning session last?
+
+- intent: inquire_tipping
+  examples: |
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I tip the cleaners after the service?
+    - Do your cleaners accept tips?
+    - Is tipping included in the cleaning service fee?
+    - What is your policy on tipping the cleaning staff?
+    - Is it expected to tip the cleaning team?
+    - Should I provide a tip for the cleaning service?
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Am I talking to a bot?
+    - You're a bot, right?
+    - You are a robot?
+    - Is this an automated service?
+    - Am I chatting with an AI?
+    - Are you a computer program?
+    - Is this a machine I'm talking to?
+
+- intent: inquire_insurance
+  examples: |
+    - Are you insured and bonded?
+    - Can you tell me about your insurance and bonding?
+    - Is your cleaning service insured?
+    - Do you have insurance and bonding for your cleaning services?
+    - What kind of insurance do you have?
+    - Are your cleaning services covered by insurance?
+    - Do you carry insurance for your cleaning services?
+    - Is your company insured for any damages during cleaning?
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - Can I schedule regular cleaning services?
+    - Do you offer weekly or monthly cleaning services?
+    - Can I book your services on a regular basis?
+    - I'm interested in scheduling regular cleaning services.
+    - Do you provide recurring cleaning services?
+    - Can I set up a regular cleaning schedule?
+    - I'd like to have regular cleaning, is that possible?
+    - Can I arrange for cleaning services on a regular basis?
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - Do you provide cleaning supplies and equipment?
+    - Will you bring your own cleaning supplies?
+    - Do I need to provide the cleaning equipment?
+    - Are cleaning supplies included in your service?
+    - Do I need to provide any cleaning materials?
+    - Will I need to supply any cleaning products or tools?
+    - Do your cleaners bring their own supplies?
+    - Are cleaning materials part of the service package?
+
+- intent: inquire_special_requests
+  examples: |
+    - Can I request special tasks or extras?
+    - Do you accommodate special cleaning requests?
+    - Can I ask for additional cleaning tasks?
+    - I have some special cleaning tasks in mind, can you accommodate them?
+    - Can I request for specific cleaning tasks to be done?
+    - I have some additional tasks, can you do them?
+    - Can I add extra tasks to the cleaning service?
+    - Are you able to handle special cleaning requests?
+
+- intent: inquire_tipping
+  examples: |
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I tip the cleaners after the service?
+    - Do your cleaners accept tips?
+    - Is tipping included in the service fee?
+    - Do I need to provide a tip for the cleaning service?
+    - What is the usual tipping practice for cleaning services?
+    - Is it expected to tip the cleaning staff?
+
+- intent: inquire_availability
+  examples: |
+    - Do you offer services in Burnaby?
+    - Are your cleaning services available in my area?
+    - Can I get your services in Richmond?
+    - I live in Surrey, can I book your services?
+    - Do you provide services in my location?
+    - Are your cleaning services available in my city?
+    - Can I avail of your services in my area?
+    - Do you serve in my locality?
+
+- intent: inquire_duration
+  examples: |
+    - How long does a cleaning session take?
+    - What's the duration of your cleaning service?
+    - How much time do you need to clean a house?
+    - How long will you take to clean my office?
+    - What is the estimated time for a cleaning session?
+    - How much time will it take to clean my space?
+    - Can you give an estimate of the cleaning duration?
+    - What is the usual duration for a cleaning service?
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - Do you provide cleaning supplies and equipment?
+    - Will you bring your own cleaning supplies?
+    - Do I need to provide the cleaning equipment?
+    - Are cleaning supplies included in your service?
+    - Do I need to provide my own cleaning supplies?
+    - Will I need to provide any cleaning equipment?
+    - Do you bring your own cleaning products and tools?
+    - Are the cleaning supplies provided by you?
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - Can I schedule regular cleaning services?
+    - Do you offer weekly or monthly cleaning services?
+    - Can I book your services on a regular basis?
+    - I'm interested in scheduling regular cleaning services.
+    - Can I arrange for a regular cleaning schedule?
+    - Do you provide regular cleaning packages?
+    - Can I set up a recurring cleaning service?
+    - Do you have options for regular cleaning?
+
+- intent: inquire_insurance
+  examples: |
+    - Are you insured and bonded?
+    - Can you tell me about your insurance and bonding?
+    - Is your cleaning service insured?
+    - Do you have insurance and bonding for your cleaning services?
+    - What kind of insurance do you have?
+    - Are your cleaning services insured and bonded?
+    - Do you carry insurance for your cleaning services?
+    - Is your company insured for any damages?
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - What is included in a standard cleaning?
+    - Can you tell me about your standard cleaning service?
+    - What does a standard cleaning service involve?
+    - I want to know what's included in your standard cleaning.
+    - What tasks are covered in a standard cleaning?
+    - Can you explain what a standard cleaning includes?
+    - What can I expect from a standard cleaning service?
+    - What's included in your basic cleaning package?
+- intent: inquire_special_requests
+  examples: |
+    - Can I request special tasks or extras?
+    - Do you accommodate special cleaning requests?
+    - Can I ask for additional cleaning tasks?
+    - I have some special cleaning tasks in mind, can you accommodate them?
+    - Can I request additional services or tasks?
+    - Do you take special requests for cleaning?
+    - Can I add extra tasks to my cleaning service?
+    - Are you able to handle special cleaning requests?
+
+- intent: inquire_tipping
+  examples: |
+    - Do I need to tip the cleaners?
+    - Is it customary to tip your cleaning staff?
+    - Should I tip the cleaners after the service?
+    - Do your cleaners accept tips?
+    - Is tipping included in the service fee?
+    - Should I tip your cleaning team?
+    - Is it expected to tip the cleaning staff?
+    - Do I need to provide a tip for the cleaning service?
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Am I talking to a bot?
+    - You're a bot, right?
+    - You are a robot?
+    - Are you an AI?
+    - Are you a computer program?
+    - You're not a human, right?
+    - Are you a virtual assistant?
+
+- intent: small_talk
+  examples: |
+    - How's it going?
+    - How are you doing?
+    - What's up?
+    - How's your day going?
+    - How's everything?
+    - How have you been?
+    - What's new?
+    - How's life treating you?
+    - How's your day been so far?
+    - How's everything going?
+    - How's your week been?
+    - How's your week going?
+    - How's your weekend been?
+    - How's your weekend going?
+    - How's the weather where you are?
+    - What's the weather like over there?
+    - How's the weather been?
+    - What's the weather forecast?
+    - How's the temperature?
+    - Is it hot or cold over there?
+    - What's your favorite season?
+    - Do you like the rain?
+    - Do you prefer summer or winter?
+    - Do you enjoy the snow?
+    - Do you like sunny weather?
+    - Do you like cloudy weather?
+    - Do you prefer hot or cold weather?
+    - Do you like the spring?
+    - Do you like the fall?
+    - Do you enjoy the changing seasons?
+
+- intent: inquire_pricing
+  examples: |
+    - "How much do your services cost?"
+    - "Can you tell me about your pricing?"
+    - "What are your rates?"
+    - "I want to know about your pricing."
+    - "Could you provide more information about your pricing?"
+    - "What's the cost for your cleaning services?"
+
+- intent: inquire_eco_friendly
+  examples: |
+    - "Do you use eco-friendly products?"
+    - "Tell me more about your eco-friendly cleaning."
+    - "Are your cleaning methods environmentally friendly?"
+    - "I want to know if your cleaning products are eco-friendly."
+    - "Do you use green cleaning products?"
+    - "Are your cleaning products safe for the environment?"
+
+- intent: inquire_satisfaction_guarantee
+  examples: |
+    - "Do you offer a satisfaction guarantee?"
+    - "Tell me more about your satisfaction guarantee."
+    - "What if I'm not satisfied with the cleaning?"
+    - "I want to know about your satisfaction guarantee."
+    - "Do you have a guarantee for your services?"
+    - "What's your policy if I'm not satisfied with the cleaning?"
+- intent: inquire_about_us
+  examples: |
+    - "Tell me more about VanShine."
+    - "I want to know more about your company."
+    - "Who is VanShine?"
+    - "Can you tell me more about your team?"
+    - "What's the history of your company?"
+    - "I'd like to know more about your organization."
+
+- intent: inquire_vision
+  examples: |
+    - "What is your vision?"
+    - "Can you tell me more about your vision?"
+    - "I want to know about VanShine's vision."
+    - "What's your company's vision?"
+    - "Could you share more about your company's vision?"
+    - "What's the vision for your company?"
+
+- intent: inquire_values
+  examples: |
+    - "What are your values?"
+    - "Can you tell me more about your values?"
+    - "I want to know about VanShine's values."
+    - "What values does your company uphold?"
+    - "Could you share more about your company's values?"
+    - "What are the core values of your company?"
+- intent: schedule_service
+  examples: |
+    - "I want to schedule a cleaning service."
+    - "Can I book a cleaning for next Tuesday?"
+    - "How do I schedule a cleaning?"
+    - "I'd like to book your cleaning services."
+    - "I want to arrange a cleaning session."
+    - "Can I set up a cleaning appointment for next week?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "Do you provide services in my location?"
+    - "Are your services available in my city?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "What's the estimated time for a cleaning session?"
+    - "Can you tell me how long a cleaning service usually takes?"
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to clean a bathroom?"
+    - "Do you have any tips for cleaning windows?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "What's your policy for unsatisfactory service?"
+    - "What if I'm not happy with the cleaning results?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Do I need to be present during the cleaning session?"
+    - "Should I stay at home while you're cleaning?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How do you maintain the quality of your services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "Do you bring your own cleaning tools and products?"
+    - "Should I provide any cleaning supplies?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you provide recurring cleaning services?"
+    - "Can I set up a regular cleaning schedule?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How do you maintain the quality of your services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "Do you bring your own cleaning tools and products?"
+    - "Should I provide any cleaning supplies?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you provide recurring cleaning services?"
+    - "Can I set up a regular cleaning schedule?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "Are your services insured?"
+    - "What kind of insurance do you have?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are covered in a standard cleaning?"
+    - "What can I expect from a standard cleaning service?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add specific tasks to the cleaning service?"
+    - "Do you take special requests for cleaning?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "Is tipping included in the service cost?"
+    - "What's the usual tipping rate for your cleaners?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to clean a bathroom?"
+    - "Do you have any tips for cleaning windows?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "Do you provide services in the downtown area?"
+    - "Are your services available on weekends?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "What's the estimated time for a deep cleaning service?"
+    - "How much time should I set aside for the cleaning?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "Do you offer a re-cleaning service if I'm not satisfied?"
+    - "What's your customer satisfaction policy?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Can you clean my house when I'm not at home?"
+    - "What if I can't be home during the cleaning?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure a high standard of cleaning?"
+    - "How do you maintain the quality of your cleaning services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "What kind of cleaning products do you use?"
+    - "Do you use eco-friendly cleaning supplies?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you provide recurring cleaning services?"
+    - "Can I set up a regular cleaning schedule with you?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "What kind of insurance do you carry for your cleaning services?"
+    - "Are your cleaners insured and bonded?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are performed during a standard cleaning?"
+    - "What can I expect from a standard cleaning service?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add extra services to my cleaning appointment?"
+    - "Do you offer any additional cleaning services?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "What is the tipping policy for your cleaning staff?"
+    - "Is tipping included in the cleaning service fee?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to clean my bathroom tiles?"
+    - "Do you have any tips for keeping my home clean between your visits?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "What areas do you serve?"
+    - "Do you provide cleaning services in my location?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "What is the estimated time for a deep cleaning service?"
+    - "Can you give me an idea of how long the cleaning will take?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "What are my options if I'm not happy with the cleaning results?"
+    - "How do you handle complaints about cleaning quality?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Can you clean my house while I'm at work?"
+    - "What if I can't be home when the cleaning is scheduled?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How can I be sure of the quality of your cleaning services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "What kind of cleaning products do you use?"
+    - "Do you use eco-friendly cleaning supplies?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you have a subscription service for regular cleanings?"
+    - "Can I set up a recurring cleaning schedule?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "What kind of insurance do you carry for your cleaning services?"
+    - "Are your cleaners insured and bonded?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are performed during a standard cleaning?"
+    - "Can you give me a breakdown of your standard cleaning service?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add extra services to my cleaning appointment?"
+    - "Do you offer any add-on services or special requests?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "What's the tipping policy for your cleaning staff?"
+    - "Is tipping included in the service fee?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to keep my home clean between your visits?"
+    - "Do you have any tips for keeping my office clean?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "What areas do you serve?"
+    - "Do you provide cleaning services in my location?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "Can you give me an estimate of how long the cleaning will take?"
+    - "What's the average duration of a cleaning session?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "What are my options if I'm not happy with the service?"
+    - "What steps do you take if a customer is not satisfied?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Can you clean my house when I'm not home?"
+    - "What's your policy on cleaning when the homeowner isn't present?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How can I be sure of the quality of your services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "What kind of cleaning supplies do you use?"
+    - "Do you use eco-friendly cleaning supplies?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you have a subscription service for regular cleanings?"
+    - "Can I set up a recurring cleaning schedule?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "What kind of insurance do you carry?"
+    - "Are your cleaners insured?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are performed during a standard cleaning?"
+    - "What can I expect from a standard cleaning service?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add on extra services to my cleaning?"
+    - "Do you offer add-on services or special requests?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "What's the tipping etiquette for cleaning services?"
+    - "Is tipping included in the cost?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to clean a bathroom?"
+    - "Do you have any tips for keeping my home clean between services?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "Do you provide services in the downtown area?"
+    - "Are your services available on weekends?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "What is the estimated time for a deep cleaning service?"
+    - "Can you finish the cleaning within a day?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "Do you offer any guarantees if I'm not happy with the service?"
+    - "What's your policy on customer dissatisfaction?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Can you clean while I'm at work?"
+    - "What if I can't be home when the cleaning is scheduled?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How do you maintain the standard of your cleaning services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "What kind of cleaning products do you use?"
+    - "Do you use eco-friendly cleaning supplies?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you have a subscription service for regular cleaning?"
+    - "Can I set up a recurring cleaning schedule?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "What kind of insurance do you have for your services?"
+    - "Are your cleaners insured and bonded?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are covered under a standard cleaning?"
+    - "What can I expect from a standard cleaning service?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add on extra services to my cleaning?"
+    - "Do you offer add-on services or special requests?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "What's the tipping policy for your cleaners?"
+    - "Is tipping included in the service cost?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to clean my bathroom?"
+    - "Do you have any tips for keeping my home clean between services?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "Do you provide services in the downtown area?"
+    - "Are your services available in the suburbs?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "What's the estimated time for a deep cleaning service?"
+    - "Can you complete the cleaning within a day?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "Do you offer any guarantees if I'm not happy with the service?"
+    - "What's your policy for handling complaints?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Can you clean my house when I'm not there?"
+    - "What if I can't be home when you come to clean?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How do you maintain the quality of your services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "Do I need to buy cleaning supplies or will you bring them?"
+    - "What kind of cleaning supplies do you use?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you have any packages for regular cleaning?"
+    - "Can I set up a recurring cleaning schedule?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "What kind of insurance do you have?"
+    - "Are your cleaners insured?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are covered in a standard cleaning?"
+    - "What can I expect from a standard cleaning?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add extra services to my cleaning?"
+    - "Are you able to handle special cleaning requests?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "What is the tipping policy?"
+    - "Is tipping included in the price?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to clean a bathroom?"
+    - "Do you have any tips for cleaning windows?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "Do you provide services in my location?"
+    - "Are you available in my area?"
+
+- intent: inquire_duration
+  examples: |
+    - "How long does a cleaning session take?"
+    - "What's the duration of your cleaning service?"
+    - "How much time do you need to clean a house?"
+    - "How long will you take to clean my office?"
+    - "What is the estimated time for a deep cleaning service?"
+    - "Can you give me an idea of how long the cleaning will take?"
+
+- intent: inquire_unsatisfied
+  examples: |
+    - "What if I'm not satisfied with the cleaning?"
+    - "What happens if I'm not happy with the cleaning service?"
+    - "What is your policy if the cleaning is not satisfactory?"
+    - "What do I do if I'm not satisfied with your cleaning service?"
+    - "What are my options if I'm not happy with the service?"
+    - "How do you handle complaints about cleaning quality?"
+
+- intent: inquire_presence_during_cleaning
+  examples: |
+    - "Do I need to be home during the cleaning?"
+    - "Should I be present when you're cleaning?"
+    - "Do I need to be there while you clean?"
+    - "Is it necessary for me to be home during the cleaning service?"
+    - "Can you clean while I'm not at home?"
+    - "What if I can't be home when the cleaning is scheduled?"
+
+- intent: inquire_quality_assurance
+  examples: |
+    - "How do you ensure the quality of your cleaning?"
+    - "What measures do you take to ensure cleaning quality?"
+    - "How do you guarantee the quality of your cleaning services?"
+    - "Can you tell me about your quality assurance process?"
+    - "What steps do you take to ensure high-quality cleaning?"
+    - "How can I be sure of the quality of your services?"
+
+- intent: inquire_cleaning_supplies
+  examples: |
+    - "Do you provide cleaning supplies and equipment?"
+    - "Will you bring your own cleaning supplies?"
+    - "Do I need to provide the cleaning equipment?"
+    - "Are cleaning supplies included in your service?"
+    - "What kind of cleaning products do you use?"
+    - "Do I need to provide any cleaning materials?"
+
+- intent: inquire_regular_cleaning
+  examples: |
+    - "Can I schedule regular cleaning services?"
+    - "Do you offer weekly or monthly cleaning services?"
+    - "Can I book your services on a regular basis?"
+    - "I'm interested in scheduling regular cleaning services."
+    - "Do you have a subscription service for regular cleanings?"
+    - "Can I set up a recurring cleaning schedule?"
+
+- intent: inquire_insurance
+  examples: |
+    - "Are you insured and bonded?"
+    - "Can you tell me about your insurance and bonding?"
+    - "Is your cleaning service insured?"
+    - "Do you have insurance and bonding for your cleaning services?"
+    - "What kind of insurance do you carry for your cleaning services?"
+    - "Are your cleaners insured and bonded?"
+
+- intent: inquire_standard_cleaning
+  examples: |
+    - "What is included in a standard cleaning?"
+    - "Can you tell me about your standard cleaning service?"
+    - "What does a standard cleaning service involve?"
+    - "I want to know what's included in your standard cleaning."
+    - "What tasks are performed during a standard cleaning?"
+    - "What can I expect from a standard cleaning service?"
+
+- intent: inquire_special_requests
+  examples: |
+    - "Can I request special tasks or extras?"
+    - "Do you accommodate special cleaning requests?"
+    - "Can I ask for additional cleaning tasks?"
+    - "I have some special cleaning tasks in mind, can you accommodate them?"
+    - "Can I add on extra services to my cleaning?"
+    - "Are you able to handle special cleaning requests?"
+
+- intent: inquire_tipping
+  examples: |
+    - "Do I need to tip the cleaners?"
+    - "Is it customary to tip your cleaning staff?"
+    - "Should I tip the cleaners after the service?"
+    - "Do your cleaners accept tips?"
+    - "What's the tipping policy for your cleaning staff?"
+    - "Is tipping included in the cleaning service fee?"
+
+- intent: request_cleaning_tips
+  examples: |
+    - "Do you have any cleaning tips?"
+    - "Can you give me some advice on maintaining cleanliness?"
+    - "I'd like some tips on cleaning my kitchen."
+    - "Can you suggest some eco-friendly cleaning methods?"
+    - "What's the best way to keep my home clean between your services?"
+    - "Do you have any tips for keeping my office clean?"
+
+- intent: inquire_availability
+  examples: |
+    - "Do you offer services in Burnaby?"
+    - "Are your cleaning services available in my area?"
+    - "Can I get your services in Richmond?"
+    - "I live in Surrey, can I book your services?"
+    - "Do you provide cleaning services in my location?"
+    - "What areas do you serve?"
+
+
+
+
